@@ -24,6 +24,10 @@ A design doc: the routing policy (task type → model tier → fallback), the co
 ---
 **Phase 3 milestone**: this design doc, reviewed against real (or realistic sample) traffic patterns.
 
+## Insurance Claims Example
+Design a routing policy by claims task type: routine property-damage estimate extraction to a small/fast tier, complex bodily-injury narrative summarization or liability assessment to a larger tier. The audit log matters doubly here — claims handling is a regulated process, so your append-only log of which model made or influenced which determination, with what confidence, isn't just cost tracking, it's the record you'd need to produce for a compliance or dispute review.
+
+
 ## Resources
 - [Inside the LLM Call: GenAI Observability with OpenTelemetry](https://opentelemetry.io/blog/2026/genai-observability/) — the official OTel post on instrumenting LLM/agent calls
 - [Claude models overview](https://docs.claude.com/en/docs/about-claude/models) (pricing reference for building a cost model)

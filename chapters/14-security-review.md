@@ -17,6 +17,10 @@ Audit both capstones against the OWASP LLM Top 10 categories, focusing specifica
 
 A security checklist covering each relevant OWASP category, with findings and fixes (or an explicit "not applicable, because..." for categories that don't apply to this system).
 
+## Insurance Claims Example
+Claims files routinely contain sensitive data — medical information on bodily-injury claims, financial details, addresses, sometimes SSNs on older intake forms. Audit what your extraction and logging pipeline actually captures and stores: does your audit log (Ch. 11) retain full raw medical narratives when it only needs a reference ID? And since claims documents come from claimants and third parties — genuinely external, sometimes adversarial input — re-check the prompt-injection defenses from Chapter 10 specifically against real document types in your pipeline (a scanned letter, an emailed estimate) rather than only synthetic test cases.
+
+
 ## Resources
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - [OWASP GenAI LLM Top 10 (2026)](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)

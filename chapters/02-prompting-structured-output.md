@@ -22,6 +22,10 @@
 
 Before/after prompt diff, plus a short accuracy/failure-rate comparison.
 
+## Insurance Claims Example
+Take a raw FNOL intake (a call transcript or web-form submission) and define a strict JSON schema for it: policy number, date/time of loss, loss type, loss description, injuries (Y/N), other parties involved, reported cause. Add few-shot examples covering an edge case adjusters actually see — a vague loss description ("something hit my car") or a claimant who doesn't know their policy number. Structured output here is what lets the intake step feed cleanly into coverage verification and triage downstream, instead of an adjuster re-typing free text.
+
+
 ## Resources
 - [Prompt engineering overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview)
 - [Structured outputs — Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs)

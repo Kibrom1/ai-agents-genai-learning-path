@@ -19,6 +19,10 @@
 
 A one-paragraph decision record: chosen framework/approach and why, written so a future you (or a teammate) understands the tradeoff without re-deriving it.
 
+## Insurance Claims Example
+Rebuild the coverage-lookup-plus-status agent from Chapter 5 in two different approaches, but this time think about what a claims workflow actually needs: is FNOL-to-close better modeled as a workflow you control step-by-step (intake → verify coverage → assign → investigate → settle → close), or as an agent that decides dynamically? For most of the claims lifecycle, a controlled workflow with agent-like steps embedded (e.g. "extract and classify this document") is the right shape — the claim's stage sequence is regulated and auditable, not something you want an LLM improvising.
+
+
 ## Resources
 - [Building Effective AI Agents — Anthropic](https://www.anthropic.com/engineering/building-effective-agents) — read this one first, it's the conceptual foundation for the rest of this phase
 - [Building agents with the Claude Agent SDK — Anthropic](https://anthropic.com/engineering/building-agents-with-the-claude-agent-sdk)

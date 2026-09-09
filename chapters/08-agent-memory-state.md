@@ -20,6 +20,10 @@
 
 A workflow diagram plus working step functions, with a note confirming the crash-resume behavior actually works as expected.
 
+## Insurance Claims Example
+A claim's lifecycle is inherently long-running — FNOL to closing can span days to months, with waits for documents, adjuster availability, and third-party responses. This is exactly what durable execution is for: model the claim as a durable workflow (FNOL received → coverage verified → assigned to adjuster → documents requested → investigation complete → reserve set → settlement offered → closed), where each stage is a checkpointed step. Kill the process mid-workflow (e.g. right after "documents requested") and confirm it resumes waiting for documents rather than restarting the claim from FNOL.
+
+
 ## Resources
 - [Inngest Docs](https://www.inngest.com/docs) — a good default if you want durable execution without standing up your own infra (Temporal and Restate are viable alternatives)
 - [The Principles of Durable Execution](https://www.inngest.com/blog/principles-of-durable-execution)

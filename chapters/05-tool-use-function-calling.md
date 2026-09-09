@@ -22,6 +22,10 @@
 
 An agent that correctly chains both tool calls for a multi-step query, plus a note on how it behaved when a tool call failed.
 
+## Insurance Claims Example
+Define two tools against a mock claims dataset: "look up policy by number" (returns coverage details, limits, deductible) and "check claim status" (returns current stage — FNOL received, assigned, under investigation, settled, closed). Give an agent a question that requires chaining both: "Is this loss covered under the policy, and what's the current status of the claim?" This is close to the first real conversational surface a claims agent needs — coverage lookup plus status, chained correctly, with a clear error path when a policy number doesn't match anything.
+
+
 ## Resources
 - [Tool use with Claude — overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
 - [Programmatic tool calling](https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling)

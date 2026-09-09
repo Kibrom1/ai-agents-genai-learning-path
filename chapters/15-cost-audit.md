@@ -15,6 +15,10 @@ Pull real usage data from your Chapter 11 audit logs (or provider dashboard) and
 
 A cost audit doc: projected vs. actual, broken down by task type, with a note on any routing-policy adjustment this suggests.
 
+## Insurance Claims Example
+Break the cost audit down by claim/task type — routine auto property-damage extraction should be cheap and high-volume; complex liability or bodily-injury cases will run through larger models more often and cost more per claim. If aggregate spend is on target but one claim type is running 3x its projection, that's the specific thing to investigate — a claim type that turned out more complex than assumed, or one where extraction confidence is low enough to be triggering excessive retries.
+
+
 ## Resources
 - [Claude models overview](https://docs.claude.com/en/docs/about-claude/models) (pricing)
 - Your Chapter 11 observability setup, to pull real numbers

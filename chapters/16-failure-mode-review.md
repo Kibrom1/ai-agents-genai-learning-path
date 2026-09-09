@@ -20,6 +20,10 @@ Walk through each failure mode above against your actual capstone system (Chapte
 
 A go/no-go checklist — each failure mode, its confirmed (tested, not assumed) behavior, and a go/no-go call before either capstone touches production data.
 
+## Insurance Claims Example
+Trigger each failure mode against your claims pipeline specifically: a FNOL extraction that comes back low-confidence — does it correctly route to an adjuster instead of silently populating the claim file with a guess? A model API outage mid-triage — does an incoming FNOL queue safely for retry, or get dropped? A malformed or corrupted uploaded document (a bad scan, an empty attachment) — clean rejection, or a garbage extraction that looks plausible? Given that a wrong automated determination here could affect a real claimant's coverage or payout, treat every "we're not sure" answer as a hard no-go.
+
+
 ## Resources
 - [Reliably run critical workflows — Inngest](https://www.inngest.com/docs/patterns/durable/reliably-run-critical-workflows) (retry/fallback patterns)
 - [Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents) (failure-containment design)

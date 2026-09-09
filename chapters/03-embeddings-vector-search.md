@@ -25,6 +25,10 @@ A one-page note: where RAG would (and wouldn't) help in your target use case, wi
 ---
 **Phase 1 milestone**: one-page note on which parts of your target use case are prompting problems vs. architecture problems.
 
+## Insurance Claims Example
+Your claims-handling guidelines, state-specific regulatory requirements, and coverage-interpretation notes are exactly the kind of large, evolving, unstructured corpus RAG is built for — "how do we handle a water-damage claim with a mold exclusion in Texas" is a real search problem. Contrast that with reading a specific police report or repair estimate: you already know the fields you're after (parties, damage description, estimated cost), so that's direct extraction (Chapter 7), not RAG. Try embedding a small set of claims-guideline documents and querying them, then write down which of your team's actual questions are "search the guidelines" vs. "extract from this one document."
+
+
 ## Resources
 - [Building Intelligent Search with AI Embeddings, Neon, and pgvector](https://neon.com/guides/ai-embeddings-postgres-search)
 - [The pgvector extension — Neon Docs](https://neon.com/docs/extensions/pgvector)

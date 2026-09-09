@@ -22,6 +22,10 @@
 
 A working RAG script, the 5 eval questions with pass/fail results, and a one-line root-cause note for any failure.
 
+## Insurance Claims Example
+Build a minimal RAG pipeline over a sample set of claims-handling policy documents or adjuster guidelines (redact or use de-identified/sample content). Write 5 real questions an adjuster would ask — e.g. "what's the documentation requirement for a total-loss auto claim" — and check whether retrieval actually surfaces the right guideline section. Chunking matters especially here: guideline documents often have numbered sub-clauses and exceptions that a naive character-count chunker will split mid-clause, silently dropping the exception that changes the answer.
+
+
 ## Resources
 - [Vector Search in Postgres — Neon Guides](https://neon.com/guides/vector-search)
 - [Chunking Strategies for RAG: A Complete Guide](https://atlan.com/know/chunking-strategies-rag/)

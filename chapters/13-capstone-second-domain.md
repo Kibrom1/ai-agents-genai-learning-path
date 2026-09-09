@@ -17,3 +17,7 @@ Doing this surfaces the parts of Chapter 12 that were accidentally specific to t
 ## Deliverable
 
 A second end-to-end working agent, sharing infrastructure with the Chapter 12 capstone, plus a short note on what turned out to be genuinely reusable vs. domain-specific.
+
+## Insurance Claims Example
+A strong second domain from the same claims lifecycle: **subrogation document review** (matching claim details against a police report and a third party's insurance information to determine fault and recovery potential) or **repair-estimate reconciliation** (comparing a shop's estimate against a claim's coverage limits and flagging discrepancies). Both reuse the Chapter 12 infrastructure but have a genuinely different extraction schema and validation ruleset — exactly the kind of second domain that tests whether your pattern generalizes past the first claim type you built against.
+

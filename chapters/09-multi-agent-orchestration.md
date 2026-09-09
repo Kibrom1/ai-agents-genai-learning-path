@@ -21,6 +21,10 @@
 
 A two-agent pipeline with a clear, documented handoff contract (schema) between them.
 
+## Insurance Claims Example
+Split a claims-intake pipeline into an extraction agent (pulls structured data from the FNOL and supporting documents) and a coverage-verification agent (checks the extracted loss against policy terms and flags exclusions). Define the handoff schema explicitly — including whether the extraction met its confidence threshold — so the verification agent knows not to confidently apply coverage rules to a low-confidence, possibly-wrong loss description.
+
+
 ## Resources
 - [Building Effective AI Agents — Anthropic](https://www.anthropic.com/engineering/building-effective-agents) (re-read the orchestrator-worker section specifically)
 - [Workflows and agents — LangGraph Docs](https://docs.langchain.com/oss/python/langgraph/workflows-agents) (multi-agent graph patterns)

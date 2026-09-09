@@ -26,6 +26,10 @@ Working spike + before/after accuracy comparison against the previous/baseline a
 ---
 **Phase 2 milestone**: this spike, committed as a branch/PR (even if not merged).
 
+## Insurance Claims Example
+Pick a real document type from the claims file — a police accident report, a repair estimate, or a medical bill — and build extraction with per-field confidence scoring. Set a threshold below which a field routes to adjuster review instead of auto-populating the claim file. This is the core of claims automation: a repair estimate with a clearly itemized total extracts at high confidence and can auto-populate; a handwritten, poorly scanned police report should route to review rather than silently populating a wrong loss date.
+
+
 ## Resources
 - [Extracting structured JSON — Claude Cookbooks (GitHub)](https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/extracting_structured_json.ipynb)
 - [Structured outputs — Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs) (revisit with a scale/confidence lens)

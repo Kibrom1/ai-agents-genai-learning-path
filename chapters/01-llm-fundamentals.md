@@ -22,6 +22,10 @@
 
 A short table: model tier | cost per 1K tokens | latency | accuracy on your test case | output consistency at temperature=0.
 
+## Insurance Claims Example
+First Notice of Loss (FNOL) comes in by phone transcript, web form, and email, at high volume and unpredictable times. Route the initial severity read (minor fender-bender vs. total loss vs. potential injury) to a small/fast model tier — it's a coarse classification, not deep reasoning — and reserve a larger tier for the cases that get escalated (complex liability narratives, multi-party losses). Run the same FNOL triage prompt against two tiers and compare cost, latency, and accuracy on a batch of real (or de-identified sample) intake records — at claims volume, this tier choice is a real budget line, not a rounding error.
+
+
 ## Resources
 - [Claude models overview](https://docs.claude.com/en/docs/about-claude/models) — current model tiers, context windows, pricing
 - [Prompt engineering overview](https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview) — covers tokens/context in practice

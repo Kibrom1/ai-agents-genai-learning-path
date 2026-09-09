@@ -24,3 +24,7 @@ This chapter is applied integration, not new material. The point is combining ev
 ## Deliverable
 
 An end-to-end working agent, tested on a sample of real (or realistic synthetic) documents, with a short note on what the anomaly-flagging threshold got right and wrong on that sample.
+
+## Insurance Claims Example
+This is a natural fit end to end: build a **Claims Intake & Triage Agent**. FNOL comes in (call transcript, web form, or email) → extract structured claim data with confidence scoring (Ch. 7) → verify coverage against the policy (a "cross-reference" step, same shape as the generic capstone's external-data-source check) → flag anomalies (missing required fields, a loss description inconsistent with the policy's covered perils, a claim amount far outside typical range for the loss type) for adjuster review → route and log every step through your control plane. Test it against a batch of sample/synthetic FNOL records spanning at least two loss types (e.g. auto and property) so you see how well the extraction and routing generalize.
+
