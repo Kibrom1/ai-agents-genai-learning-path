@@ -37,14 +37,14 @@ If you have a second real use case in your own domain, rebuilding the same patte
 
 ## Phase 5 — Production Hardening & Review (Week 10)
 
-Stand-in for a mock-interview/feedback loop — here it's a self/peer review against a checklist:
+A structured feedback loop before shipping — here it's a self/peer review against a checklist:
 
 - Security review: prompt injection, data exfiltration via tool calls, PII handling in extracted documents
 - Cost audit: actual $/extraction and $/agent-run against the routing model's projections
 - Failure-mode review: what happens on low-confidence extraction, model API outage, malformed input
 - **Milestone**: go/no-go checklist before the system touches production data
 
-## Format notes (borrowed from EdgeUp)
+## Format notes
 
 - Weekly cadence with a fixed "build day" block rather than scattered sessions
 - Self-paced study + hands-on build time each week, not lecture-only

@@ -1,6 +1,6 @@
 # AI Agents / GenAI Apps — Learning Path
 
-A self-directed, project-based learning path for going from software engineer to shipping production AI agent systems — modeled on Interview Kickstart's [EdgeUp Generative AI program](https://in.interviewkickstart.com/advanced-generative-ai-edgeup-course/) structure (phased curriculum, blended self-paced + hands-on build time, capstone projects, milestone reviews). Content and adaptation here are independently authored.
+A self-directed, project-based learning path for going from software engineer to shipping production AI agent systems: a phased curriculum, blended self-paced + hands-on build time, capstone projects, and milestone reviews at the end of each phase.
 
 ## Who this is for
 
